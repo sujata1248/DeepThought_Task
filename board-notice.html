@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N-board</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .notice_bar {
+            position: absolute;
+            width: 95px;
+            height: 394px;
+            left: 1345px;
+            top: 108px;
+
+            background: #FFFFFF;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px -4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 30px 0px 0px 30px;
+        }
+
+        .notice_bar.active {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+
+
+        .board {
+            /* position: absolute; */
+            width: 394px;
+            height: 50px;
+            margin-left: -172px;
+            margin-top: 172px;
+
+            background: #000000;
+            border-radius: 30px 30px 0px 0px;
+            transform: rotate(-90deg);
+        }
+
+        .button {
+            color: #FFFFFF;
+            background-color: #000000;
+            font-size: 20px;
+            margin-top: 10px;
+            margin-left: 350px;
+            border-color: transparent;
+
+            /* pointer-events: none;
+            opacity: 1; */
+        }
+
+        .N-board {
+            position: absolute;
+            width: 12px;
+            height: 288px;
+            left: 20px;
+            top: 40px;
+
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 10px;
+            letter-spacing: 0.02em;
+
+            color: #FFFFFF;
+            background-color: #000000;
+        }
+
+        .btn-1{
+            margin-top: 15px;
+        }
+
+        .notice_bar.active.btn-1{
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <li><button class="btn-1"><i class="fa fa-bell fa-fw"></i></button></li>
+    <div class="notice_bar">
+        
+        <div class="board">
+            <button class="button" id="button">
+                X
+            </button>
+
+        </div>
+        <div class="N-board">
+            <p>N</p>
+            <p>o</p>
+            <p>t</p>
+            <p>i</p>
+            <p>c</p>
+            <p>e</p>
+            <p><br></p>
+            <p>B</p>
+            <p>o</p>
+            <p>a</p>
+            <p>r</p>
+            <p>d</p>
+        </div>
+
+    </div>
+
+    <script>
+        let button = document.querySelector(".button");
+        let notice_bar = document.querySelector(".notice_bar");
+        let button_1=document.querySelector(".btn-1");
+
+         button.onclick = function () {
+            notice_bar.classList.toggle("active");
+        }
+
+        button_1.onclick = function () {
+            notice_bar.classList.toggle("active");
+        }
+        
+    </script>
+
+</body>
+
+</html>

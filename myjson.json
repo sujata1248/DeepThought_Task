@@ -1,0 +1,42 @@
+{
+    "sets": [
+        {
+            "explore_id":101,
+            "explore_title":"Explore the world of management",
+            "explore_description": "Explore the world of management",
+            "status": "notworkyet"
+        },
+        {
+            "asset_id": 121,
+            "asset_title": "Technical Project Management",
+            "asset_description": "Story of Alignment Scope od Aglity Specific Accountable Staggering Approach",
+            "asset_content": " https://www.youtube.com/embed/TiMRwri1xJ8",
+            "asset_type": "display_asset",
+            "asset_content_type": "video"
+        },
+        {
+            "asset_id": 122,
+            "asset_title": "Threadbuild",
+            "asset_description": "Watch the video and thread build, and jot out key threads while watching that video.",
+            "asset_content": " ",
+            "asset_type": "input_asset",
+            "asset_content_type": "threadbuilder"
+        },
+        {
+            "asset_id": 123,
+            "asset_title": "Structure you pointers ",
+            "asset_description": "Write a 400-500 word article, from your thread. Publish your understanding, and showcase your learning to the entire world.",
+            "asset_content": " ",
+            "asset_type": "input_asset",
+            "asset_content_type": "article"
+        },
+        {
+            "asset_id": 124,
+            "asset_title": "4SA Method",
+            "asset_description": "To explore more read more",
+            "asset_content": "http://127.0.0.1:5500/assets-4.html",
+            "asset_type": "display_asset",
+            "asset_content_type": "article"
+        }
+    ]
+}

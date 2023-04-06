@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical project management</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/info.css' rel='stylesheet'>
+
+    <style>
+    
+
+.assets_2 {
+    position: absolute;
+    width: 480px;
+    height: 580px;
+    left: 746px;
+    top: 397px;
+
+    background: #FDFDFD;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px -4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.tpm {
+    position: absolute;
+    width: 480px;
+    height: 50px;
+    /* left: 214px;
+            top: 397px; */
+
+    background: #000000;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.gg-info {
+    box-sizing: border-box;
+    position: absolute;
+    display: block;
+    transform: scale(var(--ggs, 1));
+    width: 20px;
+    height: 20px;
+    /* border: 2px solid; */
+    border-radius: 40px;
+    background-color: white;
+    margin-right: 37px;
+    float: right;
+    top: 14px;
+    left: 429px;
+    font-family: 'Poly';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+
+    letter-spacing: 0.02em;
+
+    color: #000000;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.info {
+    position: absolute;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    width: 22px;
+    height: 22px;
+    color: #000000;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    top: 14px;
+    left: 429px;
+    font-family: 'Poly';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.text {
+    position: absolute;
+    /* width: 247px; */
+    height: 22px;
+    top: 14px;
+    /* left: 331px;
+            top: 411px; */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height */
+
+    padding-left: 123px;
+    letter-spacing: 0.02em;
+
+    color: #FFFFFF;
+
+}
+
+.desc {
+    position: absolute;
+    width: 453px;
+    height: 83px;
+    left: 11px;
+    top: 69px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+
+    color: #000000;
+
+}
+
+        .thread {
+            /* position: absolute; */
+            width: 478px;
+            height: 40px;
+            /* margin-left: 747px; */
+            margin-top: 128px;
+
+            background: rgba(254, 255, 192, 0.2);
+            border: 0.1px solid rgba(0, 0, 0, 0.4);
+
+        }
+
+        .sub_thread {
+            /* position: absolute; */
+            width: 199px;
+            height: 95px;
+            margin-left: 27px;
+            margin-top: 30px;
+
+            background: #FDFDFD;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px -4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 15px;
+        }
+
+        .thread_1 {
+            /* position: absolute; */
+            width: 199px;
+            height: 25px;
+            /* left: 214px;
+            top: 397px; */
+
+            background: rgba(0, 0, 0, 0.05);
+            ;
+            border-radius: 10px 10px 0px 0px;
+        }
+
+
+
+        h5 {
+            margin-left: 12px;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+
+        }
+
+        .text_1 {
+            width: 193px;
+            height: 66px;
+
+            margin-top: -2px;
+
+            background: #FFFFFF;
+            opacity: 0.5;
+            border: 0.1px solid #333333;
+            box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+        }
+
+
+        .row {
+            width: 478px;
+            height: 152px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+
+        .grid-item_1 {
+            margin-left: -25px;
+        }
+
+        .cp {
+            width: 478px;
+            height: 32px;
+            margin-top: 25px;
+            margin-left: 85px;
+        }
+
+        .btn {
+            border: transparent;
+            background-color: transparent;
+        }
+
+        .btn img {
+            width: 21px;
+            height: 20px;
+        }
+
+        .cat {
+            width: 91px;
+            height: 32px;
+            margin-left: 22px;
+
+            background: #FFFFFF;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 5px;
+            font-weight: 600;
+            font-size: 10px;
+            line-height: 15px;
+
+        }
+
+        .add-button {
+            width: 97px;
+            height: 36px;
+            border-radius: 10px;
+            margin-left: 27px;
+
+            margin-top: 36px;
+            background: #0029FF;
+
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 14px;
+
+            color: #FFFFFF;
+            align-items: center;
+            display: flex;
+        }
+
+        
+
+        .last_thread {
+            /* position: absolute; */
+            width: 425px;
+            height: 108px;
+            margin-left: 27px;
+            /* margin-bottom: 26px; */
+
+            background: #FDFDFD;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px -4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 15px;
+        }
+
+        .thread_3 {
+            /* position: absolute; */
+            width: 425px;
+            height: 25px;
+            /* left: 214px;
+            top: 397px; */
+
+            background: rgba(0, 0, 0, 0.05);
+            ;
+            border-radius: 10px 10px 0px 0px;
+        }
+
+        .text_3 {
+            width: 418px;
+            height: 81px;
+
+            margin-top: -2px;
+
+            background: #FFFFFF;
+            opacity: 0.5;
+            border: 0.1px solid #333333;
+            box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+        }
+
+
+
+        .intro {
+            width: 434px;
+            /* height: 158px; */
+           
+            overflow: hidden;
+            font-weight: 500;
+            margin-left: 23px;
+            margin-bottom: 23px;
+        }
+
+
+
+        /* .collapsible {
+            max-width: 430px;
+            overflow: hidden;
+            font-weight: 500;
+        } */
+
+
+        .intro input {
+            display: none;
+        }
+
+
+        .intro label {
+            position: relative;
+            font-weight: 600;
+           
+
+            color: black;
+            display: block;
+            margin-bottom: 10px;
+            cursor: pointer;
+            padding-left: 15px;
+            border-radius: 4px;
+            z-index: 1;
+
+        }
+
+        .intro label::after {
+            content: "";
+            position: absolute;
+            left: 15px;
+            top: 0px;
+            right: 15px;
+            width: 18px;
+            height: 18px;
+            background: url(/assets/img/arrow.png) no-repeat 0, 0;
+            transition: all 0.3s ease;
+            rotate: 180deg;
+        }
+
+
+        .intro input:checked+label::after {
+            transform: rotate(180deg);
+        }
+
+
+
+        .collapsible-text {
+            position: relative;
+            max-height: 1px;
+            overflow: hidden;
+            border-radius: 4px;
+            line-height: 1.4;
+            top: -100%;
+            opacity: 0.5;
+            transition: all 0.3s ease;
+
+        }
+
+        .intro input:checked~.collapsible-text {
+            max-height: 300px;
+            padding-bottom: 25px;
+           
+            opacity: 1;
+            top: 0;
+        }
+
+        
+       
+    </style>
+
+
+
+</head>
+
+<body>
+    
+    <div class="assets_2">
+        <div class="tpm">
+            <div class="text">
+                <p style="margin-top: 0px; margin-left: 55px;">Threadbuild</p>
+            </div>
+
+            <button class="info">i</button>
+
+        </div>
+        <div class="desc">
+            <p><b>Description:</b>Watch the video threadbuild, and jot out key threads whike watching the video</p>
+        </div>
+        <div class="thread">
+            <div class="intro">
+                <input type="checkbox" id="collapsible-head">
+                <label for="collapsible-head">
+                    <p style="margin-left: 30px; height: 5px; margin-top: 10px;">Introduction</p>
+                </label>
+                <div class="collapsible-text">
+                    <div class="grid-container">
+                        <div class="grid-item">
+                            <div class="sub_thread">
+                                <div class="thread_1">
+                                    <h5>Sub thread 1</h5>
+                                </div>
+                                <textarea class="text_1" placeholder="Enter Text here"></textarea>
+            
+            
+                            </div>
+                        </div>
+                        <div class="grid-item_1">
+                            <div class="sub_thread">
+                                <div class="thread_1">
+                                    <h5>Sub Interpretation 1</h5>
+                                </div>
+                                <textarea class="text_1" placeholder="Enter Text here"></textarea>
+            
+            
+                            </div>
+                        </div>
+            
+                    </div>
+
+            </div>
+        </div>
+
+        <!-- <div class="grid-container">
+            <div class="grid-item">
+                <div class="sub_thread">
+                    <div class="thread_1">
+                        <h5>Sub thread 1</h5>
+                    </div>
+                    <textarea class="text_1" placeholder="Enter Text here"></textarea>
+
+
+                </div>
+            </div>
+            <div class="grid-item_1">
+                <div class="sub_thread">
+                    <div class="thread_1">
+                        <h5>Sub Interpretation 1</h5>
+                    </div>
+                    <textarea class="text_1" placeholder="Enter Text here"></textarea>
+
+
+                </div>
+            </div>
+
+        </div> -->
+
+
+        <div class="cp">
+            <button class="btn"><img src="/assets/img/idea.png"></button>
+            <button class="btn"><img src="/assets/img/text.png"></button>
+            <button class="btn"><img src="/assets/img/support.png"></button>
+            <button class="btn"><img src="/assets/img/lotus.png"></button>
+
+            <select name="cars" id="cars" class="cat">
+                <option value="" style="height: 10px;">Select Category</option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+            </select>
+            <select name="cars" id="cars" class="cat">
+                <option value="">Select Process</option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+            </select>
+        </div>
+
+        <button class="add-button"><i class="fa fa-plus"
+                style="font-size:8px;height: 20px;margin-right: 9px; color:white;align-items: center; display: flex;"></i>Sub-thread</button>
+
+        <div class="last_thread">
+            <div class="thread_3">
+                <h5>Sub Interpretation 1</h5>
+            </div>
+            <textarea class="text_3" placeholder="Enter Text here"></textarea>
+
+
+        </div>
+
+
+    </div>
+
+
+    
+
+
+</body>
+
+</html>

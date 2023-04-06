@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journey Board</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+        }
+
+        .sidebar {
+            position: absolute;
+            top: 140px;
+            bottom: 0;
+            left: 0;
+            overflow: hidden;
+            transition: 0.2s linear;
+            width: 132px;
+            height: 742px;
+            background: #FDFDFD;
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+            border-radius: 0px 20px 20px 20px;
+            transition: all 0.5s ease;
+
+        }
+
+        .sidebar.active {
+            width: 392px;
+        }
+
+        .board {
+            /* position: absolute; */
+            width: 392px;
+            height: 50px;
+            margin-top: -15px;
+            /* left: 0%;
+            right: 72.78%;
+            top: 0;
+            bottom: 92.24%; */
+
+            background: #000000;
+            border-radius: 0px 20px 0px 0px;
+        }
+
+        .board p {
+            margin-left: 28px;
+            padding-top: 13px;
+            color: #ffffff;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            /* identical to box height */
+
+            letter-spacing: 0.02em;
+
+
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .sidebar.active .board p {
+            opacity: 1;
+            pointer-events: none;
+        }
+
+        .logo_name {
+            opacity: 0;
+            /* display: flex; */
+            /* align-items: center; */
+            width: 100%;
+            pointer-events: none;
+
+        }
+
+        .sidebar.active .logo_name {
+            opacity: 1;
+            pointer-events: none;
+
+        }
+
+        .logo_content #btn {
+            position: absolute;
+            left: 40px;
+            width: 50px;
+            height: 50px;
+            top: 65px;
+            border-radius: 10px;
+            font-size: 36px;
+            color: #0029FF;
+            border-color: #0029FF;
+            background-color: transparent;
+            opacity: 1;
+            pointer-events: none;
+        }
+
+        .sidebar.active .logo_content #btn {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .logo_name li {
+
+            width: 309px;
+            height: 24px;
+            margin-left: 32px;
+            margin-top: 21px;
+
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            /* identical to box height */
+
+            letter-spacing: 0.02em;
+
+            color: #000000;
+
+        }
+
+        .nav_list {
+
+            width: 309px;
+            height: 110px;
+            margin-left: 32px;
+            margin-top: 18px;
+
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.02em;
+
+            color: #000000;
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .sidebar.active .nav_list {
+            opacity: 1;
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="sidebar">
+        <div class="board">
+            <p>Journey Board</p>
+
+        </div>
+        <div class="logo_content">
+            <div class="logo">
+                <div class="logo_name">
+                    <li>Explore the world of management</li>
+                </div>
+            </div>
+            <button id="btn">1</button>
+        </div>
+        <ul class="nav_list">
+            <li><span class="nav-item">Technical Project Management</span></li>
+            <li><span class="nav-item">Threadbuild</span></li>
+            <li><span class="nav-item">Structure your pointers</span></li>
+            <li><span class="nav-item">4SA Method</span></li>
+        </ul>
+    </div>
+
+
+
+    <script>
+        let btn = document.querySelector("#btn");
+        let sidebar = document.querySelector(".sidebar");
+
+        btn.onclick = function () {
+            sidebar.classList.toggle("active");
+        }
+
+        sidebar.onclick = function () {
+            sidebar.classList.toggle("active");
+        }
+
+    </script>
+
+</body>
+
+</html>

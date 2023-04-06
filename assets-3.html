@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical project management</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- <link href='https://unpkg.com/css.gg@2.0.0/icons/css/info.css' rel='stylesheet'> -->
+
+    <style>
+        .assets_3 {
+            position: absolute;
+            width: 480px;
+            height: 580px;
+            left: 214px;
+            top: 1034px;
+
+            background: #FDFDFD;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px -4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 15px;
+        }
+
+        .tpm {
+            position: absolute;
+            width: 480px;
+            height: 50px;
+            
+            /* top: 397px; */ 
+            
+            background: #000000;
+            border-radius: 15px 15px 0px 0px;
+        }
+
+        .info {
+            position: absolute;
+            background-color: #FFFFFF;
+            border-radius: 10px;
+            width: 22px;
+            height: 22px;
+            color: #000000;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            top: 14px;
+            left: 429px;
+            font-family: 'Poly';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+        }
+
+        .text {
+            position: absolute;
+            /* width: 247px; */
+            height: 22px;
+            top: 14px;
+            /* left: 331px;
+            top: 411px; */
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+            /* identical to box height */
+            justify-content: center;
+            display: flex;
+            left: 30px;
+            padding-left: 123px;
+            letter-spacing: 0.02em;
+
+            color: #FFFFFF;
+
+        }
+
+        .desc {
+            position: absolute;
+            width: 453px;
+            height: 83px;
+            left: 11px;
+            top: 69px;
+
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            letter-spacing: 0.02em;
+
+            color: #000000;
+
+        }
+
+        .title {
+            /* position: absolute; */
+            width: 479px;
+            height: 399px;
+            /* left: 214px; */
+            margin-top: 180px;
+
+            background: #FDFDFD;
+            border: 1px solid #D1CECE;
+            border-radius: 0px 0px 15px 15px;
+        }
+
+        .label {
+
+            width: 85px;
+            height: 33px;
+            margin-left: 31px;
+            margin-top: 28px;
+
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+            letter-spacing: 0.02em;
+
+            color: #000000;
+        }
+
+        .input {
+
+            width: 422px;
+            height: 43px;
+            margin-left: 31px;
+            margin-top: 5px;
+            border-color: transparent;
+            background: #FCFBFB;
+            box-shadow: -2px 2px 6px rgba(0, 0, 0, 0.15);
+            border-radius: 5px;
+        }
+
+        .content {
+            width: 85px;
+            height: 33px;
+            margin-left: 31px;
+            margin-top: 28px;
+
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+            letter-spacing: 0.02em;
+
+            color: #000000;
+
+        }
+
+        .editor {
+            width: 422px;
+            height: 82px;
+            margin-left: 31px;
+            margin-top: 5px;
+            pointer-events: auto;
+
+            background: #FCFBFB;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.18);
+            border-radius: 5px 5px 0px 0px;
+        }
+
+        .btn {
+            float: left;
+            border: #FDFDFD;
+            text-align: center;
+
+            background-color: #FDFDFD;
+            width: 24px;
+            height: 22px;
+            margin-left: 25px;
+            margin-top: 13px;
+
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 18px;
+            letter-spacing: 0.02em;
+            pointer-events: auto;
+            color: #616161;
+        }
+
+        .area {
+            width: 422px;
+            height: 132px;
+            margin-left: 31px;
+            margin-right: 26px;
+            border: transparent;
+            background: #FCFBFB;
+            box-shadow: -2px 2px 6px rgba(0, 0, 0, 0.15);
+            border-radius: 0px;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <div class="assets_3">
+        <div class="tpm">
+            <div class="text">
+                <p>Structure your Pointer</p>
+            </div>
+
+            <button class="info">i</button>
+
+        </div>
+        <div class="desc">
+            <p><b>Description:</b>Write a 300-400 words article from your thread . Publish your understanding and
+                showcase your understanding to the entire world</p>
+        </div>
+        <div class="title">
+            <div class="label">
+                <label>Title</label>
+            </div>
+            <input class="input" type="text" id="title" value="">
+            <div class="content">
+                <label>Content</label>
+            </div>
+            <div class="editor">
+                <button class="btn">File</button>
+                <button class="btn">Edit</button>
+                <button class="btn">View</button>
+                <button class="btn">Insert</button>
+                <button class="btn">Format</button>
+                <button class="btn">Tools</button>
+                <button class="btn">Table</button>
+                <button class="btn">Help</button>
+                
+                <button class="btn"><img src="/assets/img/undo.png" alt=""></button>
+                <button class="btn"><img src="/assets/img/redo.png" alt="" width="15px" height="13px"
+                        margin-top="1px"></button>
+                <button class="btn"><i class=" fa fa-arrows-alt"></i></button>
+                <button class="btn1"
+                    style="background-color: hsl(0, 0%, 92%); width: 102px; height: 18px; margin-left:-25px;margin-top:13px ; border: transparent;text-align: left;">Paragraph</button>
+                <button class="btn2"
+                    style="border: transparent; background-color: transparent; width: 5px; height: 5px;margin-left: 20px;"><i
+                        class="  fa fa-ellipsis-h"></i></button>
+
+            </div>
+
+            <!-- <input type="text" class="area" id="" value=""> -->
+            <textarea class="area"></textarea>
+
+        </div>
+    </div>
+
+
+    
+</body>
+
+</html>
